@@ -1,0 +1,55 @@
+.orgchart.myChart {
+  background-image: linear-gradient(
+      90deg,
+      rgba(33, 90, 136, 0.15) 10%,
+      rgba(0, 0, 0, 0) 10%
+    ),
+    linear-gradient(rgba(33, 90, 136, 0.15) 10%, rgba(0, 0, 0, 0) 10%) !important;
+}
+
+.orgchart.myChart > ul > li > ul li::before {
+  border-top-color: #215a88;
+}
+
+.orgchart.myChart > ul > li > ul li .oc-node::before,
+.orgchart.myChart ul li .oc-node:not(:only-child)::after {
+  background-color: #215a88;
+}
+
+.orgchart.myChart .oc-node .position {
+  box-sizing: border-box;
+  background-color: #215a88;
+  color: #fff;
+  width: 130px;
+  height: 65px;
+  padding: 2px;
+}
+
+.orgchart.myChart .oc-node .fullname {
+  box-sizing: border-box;
+  color: #215a88;
+  background-color: #fff;
+  width: 130px;
+  height: 65px;
+  padding: 2px;
+  border: 1px solid #215a88;
+}
+
+#n1 .position {
+  background-color: #006699;
+}
+#n1 .fullname {
+  border-color: #006699;
+}
+#n2 .position {
+  background-color: #009933;
+}
+#n2 .fullname {
+  border-color: #009933;
+}
+#n3 .position {
+  background-color: #993366;
+}
+#n3 .fullname {
+  border-color: #993366;
+}
